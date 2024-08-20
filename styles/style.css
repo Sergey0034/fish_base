@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Inter, sans-serif;
 }
 
 @font-face {
@@ -8,8 +9,118 @@
     src: url("../fonts/Rubik-Medium.ttf");
 }
 
+@font-face {
+    font-family: CormorantGaramond;
+    src: url("../fonts/CormorantGaramond-Regular.ttf");
+}
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    height: 100px;
+    padding: 6px 0 4px 0;
+    background: rgba(62, 61, 64, 0.6);
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+}
+
+.menu > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu > ul > li > a {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: all .1s ease;
+    text-decoration: none;
+}
+.menu > ul > li > a:hover {
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 2px;
+}
+
+.phone {
+    cursor: pointer;
+}
+
+.main {
+    height: 700px;
+}
+
+.main > img {
+    width: 100%;
+}
+
+.main-info {
+    padding-top: 204px;
+}
+
+.main-title {
+    font-family: CormorantGaramond, sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    max-width: 730px;
+    color: #F0F7FF;
+    margin-bottom: 40px;
+}
+
+.main-description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    max-width: 762px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.btn {
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 22px 52px;
+    background: #F0F7FF;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #0A0C3B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
