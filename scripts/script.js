@@ -72,8 +72,19 @@ const scrollToElementList = [
 
 ];
 
+
+document.querySelectorAll('.menu *').forEach((item) => {
+    item.onclick = () => {
+        document.getElementById('menu').classList.remove('open');
+    }
+})
+
 scrollToElementList.forEach(el => {
     document.getElementById(el.clickTo).onclick = function () {
         document.getElementById(el.scrollInto).scrollIntoView( {behavior: "smooth"});
     }
 });
+
+document.getElementById('burger').onclick = function () {
+    document.getElementById('menu').classList.add('open');
+}

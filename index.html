@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Астраханский сазан</title>
 </head>
@@ -14,7 +15,30 @@
         <div class="logo">
             <img src="assets/logo.png" alt="logo">
         </div>
-        <nav class="menu">
+        <div class="burger" id="burger">
+            <svg class="burger_svg" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="38px"
+                 height="48px">
+                <path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/>
+            </svg>
+        </div>
+        <nav class="menu" id="menu">
+            <div class="close">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+            </div>
             <ul>
                 <li>
                     <a id="linkToAbout">О нас</a>
@@ -42,7 +66,9 @@
     </div>
 </header>
 <div class="main-slick" id="main">
-    <div class="main" style="background-image: url('/images/main_block/1.jpg'); background-size: 100% 100%;">
+    <div class="main"
+         style="background-image: url('images/main_block/1.jpg');">
+<!--        <img src="images/main_block/1.jpg" alt="img">-->
         <div class="container">
             <div class="main-info">
                 <div class="main-title">
@@ -63,7 +89,7 @@
             </div>
         </div>
     </div>
-    <div class="main" style="background-image: url('/images/main_block/2.jpg'); background-size: 100% 100%;">
+    <div class="main" style="background-image: url('images/main_block/2.jpg'); background-size: 100% 100%;">
         <div class="container">
             <div class="main-info">
                 <div class="main-title">
@@ -84,7 +110,7 @@
             </div>
         </div>
     </div>
-    <div class="main" style="background-image: url('/images/main_block/3.jpg'); background-size: 100% 100%;">
+    <div class="main" style="background-image: url('images/main_block/3.jpg'); background-size: 100% 100%;">
         <div class="container">
             <div class="main-info">
                 <div class="main-title">
@@ -106,7 +132,7 @@
             </div>
         </div>
     </div>
-    <div class="main" style="background-image: url('/images/main_block/4.jpg'); background-size: 100% 100%;">
+    <div class="main" style="background-image: url('images/main_block/4.jpg'); background-size: 100% 100%;">
         <div class="container">
             <div class="main-info">
                 <div class="main-title">
@@ -128,28 +154,41 @@
         </div>
     </div>
 </div>
-
 <div class="about" id="about">
     <img class="background-anchor" src="images/background/якорь.png" alt="background-image">
     <div class="container">
         <div class="about-title title">
             Добро пожаловать в гостевой дом “Астраханский сазан” в селе Каралат!
         </div>
-        <div class="about-description">
+        <div class="about-description title-description">
             Наша уникальная локация дарит вам возможность насладиться отдыхом рядом с величественными Раскатами Каспия —
             настоящим раем для любителей подводной охоты и трофейной рыбалки.
         </div>
-        <div class="about-gallery">
-            <div class="about-gallery-row">
-                <img src="images/about/блок_2_1_из_7.jpg" alt="image">
-                <img src="images/about/блок_2_2_из_7.jpg" alt="image">
-                <img src="images/about/блок_2_3_из_7.jpg" alt="image">
-                <img src="images/about/блок_2_4_из_7.jpg" alt="image">
+        <div class="gallery-block">
+            <div class="gallery row-1">
+                <div class="gallery-item wider-row-1">
+                    <img src="images/about/блок_2_1_из_7.jpg" alt="image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/about/блок_2_2_из_7.jpg" alt="image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/about/блок_2_3_из_7.jpg" alt="image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/about/блок_2_4_из_7.jpg" alt="image">
+                </div>
             </div>
-            <div class="about-gallery-row">
-                <img src="images/about/блок_2_5_из_7.jpg" alt="image">
-                <img src="images/about/блок_2_6_из_7.jpg" alt="image">
-                <img src="images/about/блок_2_7_из_7.jpg" alt="image">
+            <div class="gallery row-2">
+                <div class="gallery-item">
+                    <img src="images/about/блок_2_5_из_7.jpg" alt="image">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/about/блок_2_6_из_7.jpg" alt="image">
+                </div>
+                <div class="gallery-item wider-row-2">
+                    <img src="images/about/блок_2_7_из_7.jpg" alt="image">
+                </div>
             </div>
         </div>
     </div>
@@ -159,7 +198,7 @@
         <div class="services-title title">
             Приезжайте всей семьей и создавайте незабываемые воспоминания в окружении потрясающей природы!
         </div>
-        <div class="services-description">
+        <div class="services-description title-description">
             Мы предлагаем широкий спектр услуг для рыболовов всех уровней — от новичков до опытных мастеров.
         </div>
         <div class="services-gallery">
@@ -264,21 +303,21 @@
                 </ul>
             </div>
         </div>
-        <div class="total-rooms">
+        <div class="room-title">
             Общие зоны
         </div>
         <div class="total-rooms-gallery">
             <div class="total-room">
-                <img src="/images/total-rooms/кухня.jpg" alt="image">
+                <img src="images/total-rooms/кухня.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/столовая.jpg" alt="image">
+                <img src="images/total-rooms/столовая.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/душ.jpg" alt="image">
+                <img src="images/total-rooms/душ.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/веранда.jpg" alt="image">
+                <img src="images/total-rooms/веранда.jpg" alt="image">
             </div>
         </div>
         <ul class="total-rooms-description">
@@ -297,16 +336,16 @@
         </ul>
         <div class="total-rooms-gallery">
             <div class="total-room">
-                <img src="/images/total-rooms/дом1.jpg" alt="image">
+                <img src="images/total-rooms/дом1.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/раки.jpg" alt="image">
+                <img src="images/total-rooms/раки.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/причал.jpg" alt="image">
+                <img src="images/total-rooms/причал.jpg" alt="image">
             </div>
             <div class="total-room">
-                <img src="/images/total-rooms/веранда_2_эт.jpg" alt="image">
+                <img src="images/total-rooms/веранда_2_эт.jpg" alt="image">
             </div>
         </div>
         <ul class="total-rooms-description">
@@ -331,43 +370,43 @@
             Галерея
         </div>
         <div class="gallery-block">
-            <div class="gallery-row odd">
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/1.jpg" alt="images">
+            <div class="gallery row-1">
+                <div class="gallery-item wider-row-1">
+                    <img src=images/gallery/1.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/2.jpg" alt="images">
+                <div class="gallery-item">
+                    <img src=images/gallery/2.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/3.jpg" alt="images">
+                <div class="gallery-item">
+                    <img src=images/gallery/3.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/4.jpg" alt="images">
-                </div>
-            </div>
-            <div class="gallery-row even">
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/5.jpg" alt="images">
-                </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/6.jpg" alt="images">
-                </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/7.jpg" alt="images">
+                <div class="gallery-item">
+                    <img src=images/gallery/4.jpg alt="images">
                 </div>
             </div>
-            <div class="gallery-row odd-revers">
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/8.jpg" alt="images">
+            <div class="gallery row-2">
+                <div class="gallery-item">
+                    <img src=images/gallery/5.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/9.jpg" alt="images">
+                <div class="gallery-item">
+                    <img src=images/gallery/6.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/10.jpg" alt="images">
+                <div class="gallery-item wider-row-2">
+                    <img src=images/gallery/7.jpg alt="images">
                 </div>
-                <div class="gallery-row-item">
-                    <img src="/images/gallery/11.jpg" alt="images">
+            </div>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/gallery/8.jpg" alt="images">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/9.jpg" alt="images">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/gallery/10.jpg" alt="images">
+                </div>
+                <div class="gallery-item wider-row-1">
+                    <img src="images/gallery/11.jpg" alt="images">
                 </div>
             </div>
         </div>
@@ -524,7 +563,7 @@
                         Часы работы:
                     </div>
                     <div class="header-work weekends">
-                        ПН-ВС с 08-00 до 22-00
+                        ПН-ВС <span>с 08-00 до 22-00</span>
                     </div>
                 </div>
             </div>

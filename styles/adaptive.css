@@ -1,0 +1,433 @@
+@media screen and (max-width: 1262px) {
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .about-gallery {
+        row-gap: 18px;
+    }
+
+    .about-gallery-row:nth-child(1) {
+        grid-template-columns: 400px 200px 200px 200px;
+        column-gap: 12px;
+        justify-content: center;
+    }
+
+    .about-gallery-row:nth-child(2) {
+        grid-template-columns: 400px 418px 200px;
+        column-gap: 12px;
+        justify-content: center;
+    }
+
+    .services-gallery {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rooms {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .total-rooms-gallery {
+        display: flex;
+        gap: 10px;
+    }
+
+    .services-image:nth-child(odd) .services-image-title {
+        padding-right: 0;
+    }
+
+    .gallery-block {
+        gap: 10px;
+    }
+
+    .gallery-row.odd {
+        display: grid;
+        grid-template-columns: 400px 200px 200px 200px;
+        column-gap: 12px;
+        justify-content: center;
+    }
+
+    .gallery-row.even {
+        display: grid;
+        grid-template-columns: 400px 400px 200px;
+        column-gap: 12px;
+        justify-content: center;
+    }
+
+    .gallery-row.odd-revers {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 400px;
+        column-gap: 12px;
+    }
+
+    .reviews .container .reviews-carousel .slick-prev {
+        left: -7%;
+    }
+
+    .reviews .container .reviews-carousel .slick-next {
+        right: -7%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-gallery {
+        row-gap: 10px;
+    }
+
+    .about-gallery-row:nth-child(1) {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .about-gallery-row:nth-child(2) {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 1074px) {
+
+    .main-info {
+        padding-top: 172px;
+    }
+
+    .main-title {
+        max-width: 670px;
+        font-family: CormorantGaramond, sans-serif;
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 41px;
+        text-align: left;
+        color: var(--light-color);
+        margin-bottom: 74px;
+    }
+
+    .main-description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29px;
+        max-width: 474px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+
+    .room-title {
+        font-size: 24px;
+    }
+
+    .room-description {
+        font-size: 14px;
+    }
+
+    .reviews .container .reviews-carousel .review .text {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .title-description {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    .container {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .phone {
+        display: none;
+    }
+    .reviews .container .reviews-carousel {
+        width: 380px;
+    }
+
+    .reviews .container .reviews-carousel .slick-prev {
+        left: -45%;
+    }
+
+    .reviews .container .reviews-carousel .slick-next {
+        right: -45%;
+    }
+
+    .footer .container {
+        padding: 20px 40px 90px 15px;
+    }
+
+    .footer-columns {
+       gap: 10px;
+    }
+}
+
+@media (max-width: 836px) {
+    .header-work {
+        margin-left: 8px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 25px;
+    }
+
+    .gallery-block {
+        gap: 0;
+    }
+    .gallery {
+        flex-wrap: wrap; /* На маленьких экранах элементы могут переноситься */
+        padding-bottom: 0;
+    }
+
+    .gallery-item {
+        flex: 1 0 calc(25% - 10px); /* 2 элемента в строке на маленьких экранах */
+    }
+
+    .wider-row-1 {
+        flex: 1 0 100%; /* Широкая фотография занимает всю ширину */
+    }
+
+    .gallery.row-2 .gallery-item:nth-child(1) {
+        flex: 1 1 100%;
+    }
+
+
+    .gallery.row-2 .gallery-item:nth-child(2) {
+        flex: 1 1 calc(59% - 10px);
+    }
+
+
+    .gallery.row-2 .gallery-item:nth-child(3) {
+        flex: 1 1 calc(25% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        z-index: 2;
+    }
+    .menu.open {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        top: 0;
+        left: 0;
+        background: #000000e8;
+        z-index: 99;
+    }
+
+    .menu.open ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu .close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #fefafa;
+        position: absolute;
+        top: 32px;
+        right: 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .main-title {
+        font-size: 24px;
+        line-height: 1.1;
+        margin-bottom: 52px;
+    }
+
+    .main-description {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 14px 42px;
+    }
+
+    .info-price-block {
+        width: 120px;
+        height: 120px;
+        bottom: 6%;
+    }
+
+    .info-price {
+        font-size: 12px;
+    }
+
+    .info-price span {
+        font-size: 14px;
+    }
+
+    .location-map {
+        width: 92%;
+        height: 320px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .title-description {
+        font-size: 14px;
+    }
+
+    .services-image {
+        width: 90% ;
+    }
+
+    .footer-columns {
+        flex-wrap: wrap;
+    }
+
+    .address-block {
+        order: 1;
+    }
+
+    .logo-and-work {
+        order: 2;
+    }
+
+    .footer-columns {
+        justify-content: space-around;
+    }
+
+    .logo-and-work .header-work {
+        margin-left: 0;
+    }
+
+    .phone-number {
+        margin-bottom: 0;
+    }
+
+    .contacts {
+        order: 3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .contacts-title {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 538px) {
+    .footer .container {
+        padding: 20px;
+    }
+
+    .address-title {
+        display: none;
+    }
+
+
+    .address-text {
+        max-width: 210px;
+    }
+
+    .title-work {
+        display: none;
+    }
+
+    .weekends {
+        margin-left: 0;
+        font-family: Open-Sans, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        text-align: left;
+        color: var(--light-color);
+        width: 144px;
+    }
+
+    .weekends span {
+        white-space: pre;
+    }
+}
+
+@media (max-width: 424px) {
+    .room-img {
+        max-width: 300px;
+    }
+    .services-image-title {
+        font-size: 14px;
+    }
+
+    .reviews .container .reviews-carousel {
+        width: 300px;
+    }
+
+    .info-price-block {
+        width: 74px;
+        height: 74px;
+        bottom: 6%;
+    }
+
+    .info-price {
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .info-price span {
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    .btn {
+        padding: 14px 20px;
+    }
+
+    .total-rooms-gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .total-rooms-gallery .total-room:nth-child(2),
+    .total-rooms-gallery .total-room:nth-child(3) {
+        flex: 1
+    }
+
+    .logo_and_work {
+        width: 210px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        gap: 28px;
+    }
+}
