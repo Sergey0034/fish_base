@@ -278,7 +278,8 @@
     .info-price-block {
         width: 120px;
         height: 120px;
-        bottom: 6%;
+        bottom: 24%;
+        right: 12%;
     }
 
     .info-price {
@@ -392,21 +393,21 @@
         width: 300px;
     }
 
-    .info-price-block {
-        width: 74px;
-        height: 74px;
-        bottom: 6%;
-    }
+    /*.info-price-block {*/
+    /*    width: 74px;*/
+    /*    height: 74px;*/
+    /*    bottom: 6%;*/
+    /*}*/
 
-    .info-price {
-        font-size: 10px;
-        line-height: 1;
-    }
+    /*.info-price {*/
+    /*    font-size: 10px;*/
+    /*    line-height: 1;*/
+    /*}*/
 
-    .info-price span {
-        font-size: 12px;
-        line-height: 1;
-    }
+    /*.info-price span {*/
+    /*    font-size: 12px;*/
+    /*    line-height: 1;*/
+    /*}*/
 
     .btn {
         padding: 14px 20px;
@@ -422,7 +423,7 @@
         flex: 1
     }
 
-    .logo_and_work .header-work {
+    .logo-and-work .header-work {
         width: 210px;
     }
 
