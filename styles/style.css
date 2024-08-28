@@ -121,7 +121,6 @@ body {
 .main {
     height: 100vh;
     position: relative;
-    /*background-size: 100% 100%;*/
     background-position: center;
 }
 
@@ -544,7 +543,7 @@ body {
 }
 
 .reviews {
-    background-image: url("/images/background/отзывы.jpg");
+    background-image: url("images/background/отзывы.jpg");
     background-size: cover;
 }
 
