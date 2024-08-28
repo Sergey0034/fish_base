@@ -34,7 +34,7 @@ $('.reviews-carousel').slick({
             }
         },
         {
-            breakpoint: 660,
+            breakpoint: 767,
             settings: {
                 arrows: false,
                 dots: true,

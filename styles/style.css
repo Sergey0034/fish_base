@@ -225,16 +225,6 @@ body {
     align-items: center;
 }
 
-.about-title {
-    max-width: 1019px;
-}
-
-.about-description {
-    text-align: center;
-    max-width: 818px;
-    margin-bottom: 70px;
-}
-
 .about-gallery {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -266,21 +256,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 74px;
-}
-
-.services-title {
-    max-width: 946px;
-}
-
-.services-description {
-    font-family: Inter, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    text-align: center;
-    margin-bottom: 78px;
-    max-width: 710px;
-    color: var(--light-color);
 }
 
 .services-gallery {
@@ -347,7 +322,7 @@ body {
 }
 
 .room-title {
-    font-family: Rubik, sans-serif;
+    font-family: CormorantGaramond, sans-serif;
     font-size: 29px;
     font-weight: 500;
     line-height: 34px;
@@ -766,21 +741,23 @@ body {
 
 .title {
     font-family: CormorantGaramond, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 45px;
+    font-weight: 500;
     line-height: 1.1;
     color: var(--light-color);
     margin-top: 74px;
     margin-bottom: 40px;
-    max-width: 420px;
+    max-width: 828px;
     text-align: center;
 }
 
 .title-description {
-    font-family: Open-Sans, sans-serif;
+    font-family: CormorantGaramond, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.1;
     text-align: center;
+    max-width: 622px;
     color: var(--light-color);
+    margin-bottom: 70px;
 }
