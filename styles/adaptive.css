@@ -214,6 +214,15 @@
     .gallery.row-2 .gallery-item:nth-child(3) {
         flex: 1 1 calc(25% - 10px);
     }
+
+    .room:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .room:hover .room-title {
+        border-bottom: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -254,6 +263,20 @@
         top: 32px;
         right: 40px;
     }
+
+    .header .logo {
+        display: flex;
+        align-items: center;
+        width: 160px;
+    }
+
+    .header .logo .logo-text {
+        display: block;
+        margin-left: 20px;
+        line-height: 1;
+        text-align: center;
+    }
+
 }
 
 
@@ -263,6 +286,7 @@
         font-size: 24px;
         line-height: 1.1;
         margin-bottom: 52px;
+        max-width: 400px;
     }
 
     .main-description {
@@ -430,5 +454,21 @@
     .contacts {
         flex-direction: column;
         gap: 28px;
+        align-items: baseline;
+        max-width: 220px;
+    }
+
+    .footer .container .logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 374px) {
+    .header .logo .logo-text {
+        display: none;
+    }
+
+    .info-price-block {
+        display: none;
     }
 }
