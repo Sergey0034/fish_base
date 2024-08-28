@@ -14,7 +14,7 @@ $('.main-slick').slick({
         {
             breakpoint: 600,
             settings: {
-                arrows: false
+                arrows: false,
             }
         }
     ]
