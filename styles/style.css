@@ -122,6 +122,7 @@ body {
     height: 100vh;
     position: relative;
     background-position: center;
+    background-size: cover;
 }
 
 .main > img {
@@ -607,6 +608,17 @@ body {
     width: 680px;
     height: 580px;
     margin-bottom: 120px;
+}
+
+.location-transfer {
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 63px;
+    color: var(--light-color);
 }
 
 .footer {

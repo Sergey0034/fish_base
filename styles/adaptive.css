@@ -185,6 +185,10 @@
         padding-right: 25px;
     }
 
+    .main {
+        background-position: center;
+    }
+
     .gallery-block {
         gap: 0;
     }
