@@ -707,8 +707,12 @@ body {
     max-width: 251px;
 }
 
+.phone-block {
+    padding-bottom: 4px;
+}
+
 .phone-number {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     cursor: pointer;
 }
 
